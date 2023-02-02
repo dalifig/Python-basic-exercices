@@ -1,0 +1,9 @@
+  Ecrire une boucle while qui demande d’entrer un prix HT (entrez 0 pour terminer) et 
+affichez sa valeur TTC
+#Code:
+
+prixHT = float(input("Prix HT (0 pour terminer)? "))
+while prixHT > 0:
+    print("Prix TTC : {:.2f}\n".format(prixHT * 1.196))
+    prixHT = float(input("Prix HT (0 pour terminer)? "))
+print("Au revoir !")
