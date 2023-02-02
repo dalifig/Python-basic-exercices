@@ -1,0 +1,20 @@
+Ecrire un programme qui permet la saisie d’une chaine de caractères, affiche sa longueur, 
+puis demande la saisie d’un caractère et affiche sa position dans la première chaine. 
+#Code:
+
+c=input("entrer une chaine")
+print("la languer de la chaine est: ",len(c))
+s=input("entrer un caracteur :")
+d=c.find(s)
+while len(s)!=1:
+    s=input("entrer un caracteur :")
+if d==-1:
+    print("n'exsit pas")
+elif d!=-1:
+    print("la position de",s,"dans la chaine \"",c,"\" est ",d)
+n=c.count(s)
+print("la caractere ",s,"repeter ",n,"dans ",c)
+if n>=2:
+    s1=c[d+1:]
+    k=s1.find(s)
+    print("la 2eme position de",s,"dans la chaine \"",c,"\" est ",k+d+1)
