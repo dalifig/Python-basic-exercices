@@ -1,0 +1,8 @@
+ Écrire une saisie filtrée d’un entier dans l’intervalle 1 à 10, bornes comprises. Affichez la 
+saisie. 
+#Code:
+
+n = int(input("Entrez un entier [1 .. 10] : "))
+while not(1 <= n <= 10):
+    n = int(input("Entrez un entier [1 .. 10], S.V.P. : "))
+print("\nValeur saisie :", n)
