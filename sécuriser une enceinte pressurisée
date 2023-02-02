@@ -1,0 +1,23 @@
+ On désire sécuriser une enceinte pressurisée. On se fixe une pression seuil et un volume 
+seuil:pSeuil = 2.3, vSeuil = 7.41. On demande de saisir la pression et le volume courant de 
+l’enceinte et d’écrire un script qui simule le comportement suivant: 
+– si le volume et la pression sont supérieurs aux seuils: arrêt immédiat; 
+ – si seule la pression est supérieure à la pression seuil : demander d’augmenter le 
+volume de l’enceinte; 
+ – si seul le volume est supérieur au volume seuil : demander de diminuer le volume de 
+l’enceinte; 
+ – sinon déclarer que «tout va bien». 
+#Code:
+
+PS=2.3
+VS=7.41
+p=float(input("Donner pression "))
+v=float(input("Donner volume "))
+if v>VS and p>PS:
+    print("arreter")
+if p>PS:
+    print("Augmenter le volume de l'enceinte ")
+elif v>VS:
+    print("diminier le volume de l'enceinte ")
+else:
+    print("tout va bien")
